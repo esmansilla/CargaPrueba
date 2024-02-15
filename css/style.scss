@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fugaz+One&display=swap');
+
+body{
+    background: #1a1a1a;
+}
+
+section{
+    border: 2px solid transparent;
+    width: 90%;
+    height: 450px;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+.tarjeta{
+    width: 100%;
+    display: flex;   
+
+    .foto_perfil{  
+        width: 35%;      
+    }
+
+    .info_perfil{
+        width: 65%;
+        padding-left: 25px;
+        
+        h2{
+            color: #cfae9b;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-family: 'Fugaz One', cursive;
+        }
+
+        h1{
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 550;
+            font-family: "Fugaz One", cursive;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #detalle{
+            width: 150px;
+            height: 2px;
+            background: #cfae9b;
+            margin-bottom: 20px;
+        }
+        p{
+            color: white;
+            font-family: "Dosis", sans-serif;
+            font-size: 18px;
+        }
+    }
+
+    .enlaces{
+        display: flex;
+        gap: 20px;
+        margin: 16px 0px;
+
+        a img{
+            transition: 0.5s;
+        }
+        a img:hover{
+            transform: scale(1.15);
+        }
+    }
+}
+
+.foto_perfil img{
+    width: 100%;
+}
+
+.tarjeta .info_perfil .datos_personales{
+    border: 3px solid #cfae9b;
+    display: flex;
+}
+
+.datos_personales ul {
+    padding-left: 0;
+    margin: 5px 15px;
+}
+
+.datos_personales ul li{
+    color: white;
+    font-size: 20px;
+    font-family: "Dosis", sans-serif;
+    list-style: none;
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/*Smartphone*/
+@media screen and (min-width:320px) and (max-width: 600px){
+    section{
+        margin: 50px auto;
+    }
+
+    .tarjeta{
+        display: block;  
+        text-align: center;
+    }    
+
+    .tarjeta .foto_perfil{
+        width: 55%;    
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+    .tarjeta .info_perfil{
+        width: 98%;
+        padding-left: 0px;
+    }
+    
+    .tarjeta .info_perfil h1{
+        font-size: 25px;
+    }
+    .tarjeta .info_perfil h2{
+        font-size: 14px;
+    }
+
+    .tarjeta .info_perfil #detalle{
+        width: 150px;
+        margin: 5px auto;
+    }
+    .tarjeta .info_perfil p{
+        font-size: 14px;
+    }
+    /*
+    .datos_personales ul {
+        padding-left: 10px;
+    }*/
+
+    .tarjeta .info_perfil .datos_personales ul li{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width:601px) and (max-width: 768px){
+    
+    section{
+        margin: 50px auto;
+    }
+
+    .tarjeta{
+        display: block;  
+        text-align: center;
+    }    
+
+    .tarjeta .foto_perfil{
+        width: 55%;    
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+    .tarjeta .info_perfil{
+        width: 98%;
+        padding-left: 0px;
+    }
+    
+    .tarjeta .info_perfil h1{
+        font-size: 25px;
+    }
+    .tarjeta .info_perfil h2{
+        font-size: 14px;
+    }
+
+    .tarjeta .info_perfil #detalle{
+        width: 150px;
+        margin: 5px auto;
+    }
+    .tarjeta .info_perfil p{
+        font-size: 14px;
+    }
+
+
+    .tarjeta .info_perfil .datos_personales ul li{
+        font-size: 16px;
+    }
+}
+
+/*Ipad*/
+@media screen and (min-width:769px) and (max-width: 1000px){
+    .tarjeta .info_perfil h1{
+        font-size: 25px;
+    }
+    .tarjeta .info_perfil h2{
+        font-size: 14px;
+    }
+
+    .tarjeta .info_perfil #detalle{
+        width: 127px;
+    }
+    .tarjeta .info_perfil p{
+        font-size: 14px;
+    }
+
+    .tarjeta .info_perfil .datos_personales ul li{
+        font-size: 16px;
+    }
+}
+
+
+/* ESTE ES EL CÓDIGO QUE YO ESCRIBÍ COMO PRANTICANDO ===============
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #1a1a1a;
+}
+
+section{
+    border: 2px solid white;
+    max-width: 900px;
+    width: 90%;
+    height: 500px;
+    margin: 50px auto;
+
+}
+
+.tarjeta{
+    display: flex;   
+    .foto_perfil{        
+        padding: 10px;
+    }     
+
+    .info_perfil{
+        padding: 15px;
+        h2{
+            color: #00f29e;
+        }
+        h1{
+            color: white;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        p{
+            color: white;
+            font-size: 15px;
+            padding: 20px 0;
+        }
+    }
+
+    
+
+    .enlaces{
+        display: flex;
+        padding: 20px 0;
+        gap: 10px
+    }
+
+}
+
+.tarjeta .info_perfil .datos_personales{
+    border: 2px solid #00f29e;
+    display: flex;
+    color: white;
+    padding: 20px 20px;
+    gap: 80px
+}
+
+.tarjeta .info_perfil .datos_personales .columna1{
+    font-size: 15px;
+    li{
+        strong{
+            text-decoration: none;
+     }
+}
+
+}
+*/
